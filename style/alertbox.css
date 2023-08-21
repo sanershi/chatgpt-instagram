@@ -1,0 +1,65 @@
+.hata {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.uyari {
+  padding: 20px;
+  background-color: #ff9800; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.basarili {
+  padding: 20px;
+  background-color: #04AA6D; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+
+.bilgi {
+  padding: 20px;
+  background-color: #2196F3; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.hata, .uyari, .basarili, .bilgi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* En üstte göstermek için */
+}
+
+.hata, .uyari, .basarili, .bilgi  {
+  opacity: 1;
+  transition: opacity 0.6s; /* 600ms to fade out */
+}
+
+/* The close button */
+.closebtn {
+  height: 0px;
+  width: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
